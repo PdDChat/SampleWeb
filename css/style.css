@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+.contents {
+    background-color: aqua;
+    padding: 10px;
+}
+
+dl {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    border-top: none;
+    text-align: center;
+}
+
+dt {
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+dd {
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #000000;
+    width: 70%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+div {
+    padding: 10px;
+}
+
+strong {
+    color: red;
+    font-weight: bold;
+    font-size: 200%;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+ol.first-layer {
+    counter-reset: num_f;
+}
+
+.first-layer li {
+    counter-increment: num_f;
+}
+
+.first-layer li:before {
+    display: marker;
+    content: "(" counter(num_f)") ";
+}
+
+ol.second-layer {
+    counter-reset: num_s;
+}
+
+.second-layer li {
+    counter-increment: num_s;
+}
+
+.second-layer li:before {
+    display: marker;
+    content: counter(num_f)'.' counter(num_s)". ";
+}
+
+ol.third-layer {
+    counter-reset: num_t;
+}
+
+.third-layer li {
+    counter-increment: num_t;
+}
+
+.third-layer li:before {
+    display: marker;
+    content: counter(num_f)'.' counter(num_s)"." counter(num_t)'. ';
+}
+
+.border {
+    text-align: center;
+    margin-bottom: 50px;
+    border: 10px dotted #000;
+}
+
+.header_logo {
+    float: left;
+    padding: 10px;
+}
+
+.header_title {
+    background-color: red;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    margin: 0;
+}
+
+.footer_title {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}

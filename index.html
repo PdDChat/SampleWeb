@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,49 @@
     <title>サンプルタイトル</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
+
 <body>
-    <p>初めてのHTML</p>
+    <header id="header"></header>
+
+    <div class="contents">
+        <div class="border">
+            <strong>コンテンツ</strong>
+        </div>
+
+        <dl>
+            <dt>タイトル(dt)</dt>
+            <dd>内容（dd）</dd>
+            <dt>タイトル(dt)</dt>
+            <dd>内容（dd）</dd>
+        </dl>
+
+        <ol class="first-layer">
+            <li>1つ目の階層リスト－１</li>
+            <li>1つ目の階層リスト－２</li>
+            <ol class="second-layer">
+                <li>２つ目の階層リスト－１</li>
+                <li>２つ目の階層リスト－２</li>
+                <ol class="third-layer">
+                    <li>３つ目の階層リスト－１</li>
+                </ol>
+            </ol>
+            <li>1つ目の階層リスト－３</li>
+            <ol class="second-layer">
+                <li>２つ目の階層リスト－１</li>
+                <ol class="third-layer">
+                    <li>３つ目の階層リスト－１</li>
+                    <li>３つ目の階層リスト－２</li>
+                </ol>
+                <li>２つ目の階層リスト－２</li>
+            </ol>
+        </ol>
+
+
+    </div>
+
+    <footer id="footer"></footer>
+
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
