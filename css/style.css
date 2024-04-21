@@ -112,3 +112,22 @@ ol.third-layer {
     padding: 10px;
     margin: 0;
 }
+
+/** 端末幅別の処理 **/
+@media screen and (max-width: 1440px) {
+    .header_title {
+        background-color: black;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header_title {
+        background-color: greenyellow;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header_title {
+        background-color: red;
+    }
+}
